@@ -5,4 +5,5 @@ package com.example.user.newgame;
  */
 
 public class Character {
+    public void makeAChange(){int i = 0;}
 }
