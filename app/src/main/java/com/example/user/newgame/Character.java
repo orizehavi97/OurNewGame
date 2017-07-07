@@ -6,6 +6,7 @@ package com.example.user.newgame;
 
 public abstract class Character {
 
+    // Constructor
     public Character() {
 
     }
