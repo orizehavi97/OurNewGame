@@ -35,6 +35,49 @@ public class Point {
     }
 
     /**
+     * Returning the value of the x coordinate
+     *
+     * @return
+     */
+    public int getX() {
+        return this.x;
+    }
+
+
+    /**
+     * Returning the value of the y coordinate
+     *
+     * @return
+     */
+    public int getY() {
+        return this.y;
+    }
+
+
+    /**
+     * Setting the x coordinate
+     *
+     * @param x
+     */
+    public void setX(int x)
+    {
+        this.x = x;
+    }
+
+
+
+    /**
+     * Setting the y coordinate
+     *
+     * @param y
+     */
+    public void setY(int y)
+    {
+        this.y = y;
+    }
+
+
+    /**
      * A method to calculate the distance between this point and another point.
      *
      * @param p - A new point to use for distance
@@ -46,5 +89,7 @@ public class Point {
         double dY = (double)this.y - (double)p.y;
         return Math.sqrt((Math.pow(dX,2) + Math.pow(dY,2)));
     }
+
+
 
 }

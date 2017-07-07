@@ -14,6 +14,6 @@ public class GameBoard {
      */
     public GameBoard()
     {
-        boardMatrix = new Point[9][9];
+        this.boardMatrix = new Point[9][9];
     }
 }
