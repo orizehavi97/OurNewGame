@@ -1,8 +1,12 @@
 package com.example.user.newgame;
 
 /**
- * Created by user on 07/07/2017.
+ * Created by oriisking on 07/07/2017.
  */
 
-public class Character {
+public abstract class Character {
+
+    public Character() {
+
+    }
 }
