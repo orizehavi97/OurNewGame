@@ -9,6 +9,7 @@ public abstract class Character {
     private int hp;
     private int damage;
     private int movment;
+    private Point location;
 
     // Constructors
 
@@ -16,7 +17,7 @@ public abstract class Character {
      * Constructor for character for default values.
      */
     public Character() {
-        this(0, 0, 0);
+        this(0, 0, 0, new Point());
     }
 
     /**
@@ -25,11 +26,13 @@ public abstract class Character {
      * @param hp - The health points of character.
      * @param damage - The damage of character.
      * @param movment - The character's movment.
+     * @param location - The character's location.
      */
-    public Character(int hp, int damage, int movment) {
+    public Character(int hp, int damage, int movment, Point location) {
         this.hp = hp;
         this.damage = damage;
         this.movment = movment;
+        this.location = location;
     }
 
     // Access methods
@@ -62,6 +65,15 @@ public abstract class Character {
     }
 
     /**
+     * Access method to get the location of a character.
+     *
+     * @return The location of a character.
+     */
+    public Point getLocation() {
+        return this.location;
+    }
+
+    /**
      * Access method to set the health points of a character.
      *
      * @param hp - The health points of a character.
@@ -88,9 +100,41 @@ public abstract class Character {
         this.movment = movment;
     }
 
+    /**
+     * Access method to set the location of a character.
+     *
+     * @param location - The location of a character.
+     */
+    public void setLocation(Point location) {
+        this.location = location;
+    }
+
     // Other methods
 
-    public int getHitted () {
-        return 0;
+    /**
+     * Getting a hit from the attacking character.
+     *
+     * @param attackingCharacter - The attacking character.
+     */
+    public void getHitted (Character attackingCharacter) {
+        this.setHp(this.getHp() - attackingCharacter.getDamage());
+    }
+
+    /**
+     * Attack the defensive character.
+     *
+     * @param defensiveCharacter - The defensive character.
+     */
+    public void attack(Character defensiveCharacter) {
+        defensiveCharacter.attack(defensiveCharacter);
+    }
+
+    /**
+     * Move the character to another location.
+     *
+     * @param newLocation - The character's new location.
+     */
+    public void move(Point newLocation) {
+        this.setLocation(newLocation);
     }
 }
