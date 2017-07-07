@@ -8,6 +8,7 @@ public abstract class Character {
 
 
     private int hp;
+    private int damage;
     // Constructor
     public Character() {
 
