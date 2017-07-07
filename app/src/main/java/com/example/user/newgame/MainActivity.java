@@ -11,8 +11,4 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    private void checkIfCorrect()
-    {
-        int i = 1+1;
-    }
 }
