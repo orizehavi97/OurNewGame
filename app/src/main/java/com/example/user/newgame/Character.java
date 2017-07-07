@@ -126,7 +126,7 @@ public abstract class Character {
      * @param defensiveCharacter - The defensive character.
      */
     public void attack(Character defensiveCharacter) {
-        defensiveCharacter.attack(defensiveCharacter);
+        defensiveCharacter.getHitted(this);
     }
 
     /**
