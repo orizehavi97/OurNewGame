@@ -38,7 +38,7 @@ public class Point {
      * A method to calculate the distance between this point and another point.
      *
      * @param p - A new point to use for distance
-     * @return
+     * @return a double with the distance included
      */
     public double distance(Point p)
     {
