@@ -32,8 +32,13 @@ The purpose of the game is to kill all of the other player's pawns.
 How's the mechanic works?
 
   Classes:
+	
     -GameBoard.java - the main board of the game, consists of 2 teams object and a 9X9 Point matrix.
+		
     -Team.java - consists of list of 10 Characters
+		
     -Character.java
+		
     -Point.java
+		
 
