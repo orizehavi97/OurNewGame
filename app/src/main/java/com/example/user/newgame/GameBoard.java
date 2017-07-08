@@ -7,13 +7,13 @@ package com.example.user.newgame;
 public class GameBoard {
 
     //Data members
-    private Point[][] boardMatrix;
+    private Character[][] boardMatrix;
 
     /**
      * Building a new instance of a board object.
      */
     public GameBoard()
     {
-        this.boardMatrix = new Point[9][9];
+        this.boardMatrix = new Character[9][9];
     }
 }
