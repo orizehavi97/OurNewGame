@@ -9,17 +9,12 @@ The player now has to place his pawns withing a 9X9 game board.
 
 After both players have placed their pawns withing the game board, a random player is the one to start the game.
 
-In each turn, the player need to pick and click on one of his pawns. When you click a pawn you got 3 options:
-  -Move.
-  -Use special abbility - Attack/Heal/Switch/Disguise, according to the pawn.
-  -Finish the turn.
-  -Click again on the pawn and choose another one.
+In each turn, the player need to pick and click on one of his pawns. When you click a pawn points on the map will get colored with those functions:
+  -Blue - Move.
+  -Yellow - Use special abbility - Attack/Heal/Switch/Disguise, according to the pawn.
+  -Green - Move and use special abbility.
+  -Red - Click again on the pawn and choose another one.
 
-In each turn you can do one of the following:
-  -Move, use special abbility and finish the turn.
-  -Move and finish the turn.
-  -Use special abbility and finish the turn.
-  -Choose another pawn and again one of the above.
   
 The purpose of the game is to kill all of the other player's pawns.
 
